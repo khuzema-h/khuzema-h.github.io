@@ -450,7 +450,7 @@
         }
         .publication-grid {
             display: flex;
-            flex-direction: column, row;
+            flex-direction: column;
             gap: 20px;
         }
         .publication-card {
@@ -462,6 +462,8 @@
         }
         .publication-card:hover {
             transform: translateY(-5px);
+            overflow: visible; /* Allow the shadow to show fully */
+            box-shadow: 0 12px 20px var(--shadow-color);
         }
         .publication-title {
             width: 100%;
@@ -470,7 +472,7 @@
             padding: 20px;
             font-size: 1.2rem;
             font-weight: 700;
-            text-align: left;
+            text-align: center;
             border: none;
             border-bottom: 2px solid var(--yellow-accent);
             cursor: pointer;
@@ -717,6 +719,8 @@
             <h2>Education</h2>
             <p><strong style="color: var(--yellow-accent);">Master of Engineering in Robotics, 2024-2026</strong><br>
             <small style="color: var(--light-text);">University of Maryland, College Park</small></p>
+            <p><strong style="color: var(--yellow-accent);">Bachelors of Technolgy in Mechanical Engineering, 2019-2023</strong><br>
+            <small style="color: var(--light-text);">Manipal Institute of Technology</small></p>
         </section>
 
         <!-- <section id="experience" class="section work-tree">
