@@ -16,19 +16,21 @@
     <meta name="twitter:image" content="https://thequantscientist.github.io/assets/kyo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-:root [data-theme="matcha-light"]  {
-   --dark-bg: #f5f6f1;            /* background — off-white matcha foam */
-  --light-text: #2e2e2e;         /* main text */
-  --highlight-bg: #ffffff;       /* cards / containers */
-  --highlight-text: #1a1a1a;     /* card title text */
-  --yellow-accent: #c5a15d;      /* golden matcha whisk tone */
-  --link-color: #4a7856;         /* matcha leaf green */
-  --button-blue: #7ca982;        /* soft sage green for buttons */
-  --red-accent: #d9776f;         /* muted clay tone */
-  --cv-button: #557c56;          /* deeper green accent for CV button */
-  --shadow-color: rgba(0, 0, 0, 0.1);
+:root {
+  --dark-bg: #080808;
+  --light-text: #e0e0e0;
+  --highlight-bg: #101820;
+  --highlight-text: #ffffff;
+  --yellow-accent: #faff00;
+  --link-color: #00bfff;
+  --button-blue: #0077ff;
+  --red-accent: #ff0055;
+  --cv-button: #00e5ff;
+  --shadow-color: rgba(0, 255, 255, 0.15);
 }
-:root[data-theme="matcha-dark"] {
+
+
+/* :root[data-theme="matcha-dark"] {
   --dark-bg: #1d2620;
   --light-text: #e8f0e6;
   --highlight-bg: #2a3a31;
@@ -39,7 +41,7 @@
   --red-accent: #ef767a;
   --cv-button: #88c999;
   --shadow-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 
 
@@ -694,7 +696,7 @@
             <li><a href="#interests">Interests</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
-             <div style="text-align:right; margin-top:10px;">
+             <!-- <div style="text-align:right; margin-top:10px;">
   <button id="theme-toggle" style="
     background-color: var(--highlight-bg);
     color: var(--light-text);
@@ -706,7 +708,7 @@
   ">
     Theme
   </button>
-</div>
+</div> -->
             <!-- <li><a href="#awards">Awards</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#press">Press</a></li> -->
@@ -1094,19 +1096,19 @@
             });
         });
         // Theme toggle
-const toggle = document.getElementById("theme-toggle");
-const root = document.documentElement;
+// const toggle = document.getElementById("theme-toggle");
+// const root = document.documentElement;
 
-toggle.addEventListener("click", () => {
-  const current = root.dataset.theme;
-  const next = current === "matcha-dark" ? "matcha-light" : "matcha-dark";
-  root.dataset.theme = next;
-  localStorage.setItem("theme", next);
-  toggle.textContent = next === "matcha-dark"  
-});
+// toggle.addEventListener("click", () => {
+//   const current = root.dataset.theme;
+//   const next = current === "matcha-dark" ? "matcha-light" : "matcha-dark";
+//   root.dataset.theme = next;
+//   localStorage.setItem("theme", next);
+//   toggle.textContent = next === "matcha-dark"  
+// });
 
-// Initialize stored theme
-root.dataset.theme = localStorage.getItem("theme") || "matcha-light";
+// // Initialize stored theme
+// root.dataset.theme = localStorage.getItem("theme") || "matcha-light";
 
 
 
