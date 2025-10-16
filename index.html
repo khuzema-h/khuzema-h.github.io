@@ -16,7 +16,7 @@
     <meta name="twitter:image" content="https://thequantscientist.github.io/assets/kyo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-:root {
+:root [data-theme="matcha-light"]  {
    --dark-bg: #f5f6f1;            /* background — off-white matcha foam */
   --light-text: #2e2e2e;         /* main text */
   --highlight-bg: #ffffff;       /* cards / containers */
@@ -28,6 +28,19 @@
   --cv-button: #557c56;          /* deeper green accent for CV button */
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
+:root[data-theme="matcha-dark"] {
+  --dark-bg: #1d2620;
+  --light-text: #e8f0e6;
+  --highlight-bg: #2a3a31;
+  --highlight-text: #f5f7f4;
+  --yellow-accent: #e3b56d;
+  --link-color: #9dd19d;
+  --button-blue: #6dbf97;
+  --red-accent: #ef767a;
+  --cv-button: #88c999;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
 
 
 
@@ -672,6 +685,20 @@
 </head>
 <body>
     <nav class="nav-bar">
+        <div style="text-align:center; margin-top:10px;">
+  <button id="theme-toggle" style="
+    background-color: var(--highlight-bg);
+    color: var(--light-text);
+    border: 2px solid var(--button-blue);
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  ">
+    Toggle Theme
+  </button>
+</div>
+
         <ul>
             <li><a href="#biography">About Me</a></li>
             <li><a href="#education">Education</a></li>
@@ -1065,6 +1092,23 @@
                 });
             });
         });
+        // Theme toggle
+const toggle = document.getElementById("theme-toggle");
+const root = document.documentElement;
+
+toggle.addEventListener("click", () => {
+  const current = root.dataset.theme;
+  const next = current === "matcha-dark" ? "matcha-light" : "matcha-dark";
+  root.dataset.theme = next;
+  localStorage.setItem("theme", next);
+  toggle.textContent = next === "matcha-dark" ? "🌲 Matcha Dark Mode" : "🍵 Matcha Light Mode";
+});
+
+// Initialize stored theme
+root.dataset.theme = localStorage.getItem("theme") || "matcha-light";
+
+
+
     </script>
 </body>
 </html>
