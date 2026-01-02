@@ -173,7 +173,7 @@
 
         /* Layout */
         .content-wrapper {
-            max-width: 1100px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 120px 20px 60px;
         }
@@ -274,18 +274,25 @@
         /* Grid Cards */
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 650px), 1fr));
+            gap: 40px;
         }
 
         .glass-card {
             background: var(--bg-surface);
             border: 1px solid var(--glass-border);
-            padding: 30px;
-            border-radius: 20px;
+            padding: 40px;
+            border-radius: 28px;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .glass-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
         }
 
         .glass-card:hover {
@@ -296,7 +303,7 @@
 
         .project-media {
             width: 100%;
-            height: 180px;
+            height: 360px;
             border-radius: 14px;
             overflow: hidden;
             margin-bottom: 25px;
@@ -569,9 +576,9 @@
             <li><a href="#biography">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#interests">Interests</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#interests">Interests</a></li>
         </ul>
         <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
             <span id="themeIcon">🌙</span>
@@ -716,25 +723,7 @@
             </div>
         </section>
 
-        <section id="interests" class="section">
-            <h2>Research Interests</h2>
-            <div class="interest-tags">
-                <a href="https://en.wikipedia.org/wiki/Robot_control" target="_blank" class="tag">Robot Control
-                    Systems</a>
-                <a href="https://en.wikipedia.org/wiki/Autonomous_robot" target="_blank" class="tag">Autonomous
-                    Navigation</a>
-                <a href="https://en.wikipedia.org/wiki/Robot_manipulator" target="_blank" class="tag">Robotic
-                    Manipulation</a>
-                <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" class="tag">Computer Vision</a>
-                <a href="https://en.wikipedia.org/wiki/Computational_fluid_dynamics" target="_blank"
-                    class="tag">Computational Fluid Dynamics</a>
-                <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="tag">Machine
-                    Learning</a>
-                <a href="https://en.wikipedia.org/wiki/Smart_material" target="_blank" class="tag">Smart Materials</a>
-                <a href="https://en.wikipedia.org/wiki/Energy_harvesting" target="_blank" class="tag">Energy
-                    Harvesting</a>
-            </div>
-        </section>
+        
 
         <section id="projects" class="section">
             <h2>Featured Projects</h2>
@@ -784,7 +773,7 @@
                         </video>
                     </div>
                     <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
-                    <h5 style="color: var(--accent-yellow);">Ongoing</h5>
+                    <h4 style="color: var(--accent-yellow);">Ongoing</h4>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
                         innovation here.</p>
                     <ul>
@@ -1014,6 +1003,26 @@
                         and Lightweight Robotic Manipulation</div>
                     <a href="https://arxiv.org/abs/2510.01433" target="_blank" class="btn">View Paper</a>
                 </div>
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <h2>Research Interests</h2>
+            <div class="interest-tags">
+                <a href="https://en.wikipedia.org/wiki/Robot_control" target="_blank" class="tag">Robot Control
+                    Systems</a>
+                <a href="https://en.wikipedia.org/wiki/Autonomous_robot" target="_blank" class="tag">Autonomous
+                    Navigation</a>
+                <a href="https://en.wikipedia.org/wiki/Robot_manipulator" target="_blank" class="tag">Robotic
+                    Manipulation</a>
+                <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" class="tag">Computer Vision</a>
+                <a href="https://en.wikipedia.org/wiki/Computational_fluid_dynamics" target="_blank"
+                    class="tag">Computational Fluid Dynamics</a>
+                <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="tag">Machine
+                    Learning</a>
+                <a href="https://en.wikipedia.org/wiki/Smart_material" target="_blank" class="tag">Smart Materials</a>
+                <a href="https://en.wikipedia.org/wiki/Energy_harvesting" target="_blank" class="tag">Energy
+                    Harvesting</a>
             </div>
         </section>
 
