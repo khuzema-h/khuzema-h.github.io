@@ -460,6 +460,26 @@
             transform: scale(1.05);
         }
 
+        /* Project Tags */
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .p-tag {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
         /* Publications */
         .pub-card {
             background: var(--bg-surface);
@@ -760,6 +780,12 @@
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Built and developed a fully autonomous
                         robot capable of computer vision-based object localization and servo-controlled manipulation.
                     </p>
+                    <div class="project-tags">
+                        <span class="p-tag">ROS</span>
+                        <span class="p-tag">Computer Vision</span>
+                        <span class="p-tag">Robotics</span>
+                        <span class="p-tag">Python</span>
+                    </div>
                     <ul>
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Integrated
                             sensor-fused navigation.</li>
@@ -773,7 +799,7 @@
                     </div> -->
                 </div>
 
-                 <!-- Template for 10 more projects -->
+                <!-- Template for 10 more projects -->
                 <div class="glass-card">
                     <div class="project-media">
                         <video autoplay loop muted playsinline poster="assets/img/arm.png">
@@ -784,13 +810,21 @@
                     <!-- <h4 style="color: var(--accent-yellow);">Ongoing</h4> -->
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Worked on a behavior planner for
                         autonomous vehicles in CARLA with Behaviour Trees for decision making.</p>
+                    <div class="project-tags">
+                        <span class="p-tag">CARLA</span>
+                        <span class="p-tag">Behavior Trees</span>
+                        <span class="p-tag">C++</span>
+                        <span class="p-tag">Motion Planning</span>
+                    </div>
                     <ul>
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
                             <strong>Behavior Planning:</strong> Uses Behavior Trees to decide high-level maneuvers
-                            (LANE_KEEP, FOLLOW, LANE_CHANGE, STOP_FOR_LIGHT, RECOVERY).</li>
+                            (LANE_KEEP, FOLLOW, LANE_CHANGE, STOP_FOR_LIGHT, RECOVERY).
+                        </li>
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
                             <strong>Trajectory Planning:</strong> Generates candidate trajectories in Frenet coordinates
-                            and selects the optimal path based on a weighted cost function.</li>
+                            and selects the optimal path based on a weighted cost function.
+                        </li>
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"><strong>Vehicle
                                 Control:</strong> Implemented PID controller for longitudinal speed and Stanley
                             controller for high-fidelity lateral steering.</li>
@@ -816,6 +850,12 @@
                     <h3 style="color: var(--accent-blue);">Visual Servoing with MPC</h3>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Designed MPC visual servoing
                         controller for Turtlebot3 navigation using RealSense and Aruco markers.</p>
+                    <div class="project-tags">
+                        <span class="p-tag">MPC</span>
+                        <span class="p-tag">Control Theory</span>
+                        <span class="p-tag">Turtlebot</span>
+                        <span class="p-tag">RealSense</span>
+                    </div>
                     <ul>
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Smoother
                             control than traditional PD.</li>
@@ -830,7 +870,7 @@
                     </div>
                 </div>
 
-               
+
                 <div class="glass-card">
                     <div class="project-media">
                         <video autoplay loop muted playsinline poster="assets/img/arm.png">
@@ -839,14 +879,30 @@
                     </div>
                     <h3 style="color: var(--accent-blue);">Stanford Doggo Inspired Quadruped</h3>
                     <h4 style="color: var(--accent-yellow);">Ongoing</h4>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px;"> Building an agile and durable quadruped robot inspired by Stanford Doggo to use as a testbed for future projects</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;"> Building an agile and durable
+                        quadruped robot inspired by Stanford Doggo to use as a testbed for future projects</p>
+                    <div class="project-tags">
+                        <span class="p-tag">Mechatronics</span>
+                        <span class="p-tag">Control</span>
+                        <span class="p-tag">Fabrication</span>
+                        <span class="p-tag">Quadruped</span>
+                    </div>
                     <ul>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Fabrication(3D Printing and CNC machining) and Assembly </li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Wiring and Odrive setup with custom firmware, Teensy 3.5 Microcontroller for control with Xbee for Wireless communication</li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Chassis reinforcement with the use of Carbon Fiber Rods over Sheet Metal</li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Testing and fine-tuning the build to ensure proper functionality - Need to fix some issues with weaker PLA components snapping under load when walking</li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Future integration with ROS2 for Autonous Navigation and easier integration with other subsystems</li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Future improvements to mechanical design to add additional degree of freedom to the legs </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Fabrication(3D
+                            Printing and CNC machining) and Assembly </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Wiring and
+                            Odrive setup with custom firmware, Teensy 3.5 Microcontroller for control with Xbee for
+                            Wireless communication</li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Chassis
+                            reinforcement with the use of Carbon Fiber Rods over Sheet Metal</li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Testing and
+                            fine-tuning the build to ensure proper functionality - Need to fix some issues with weaker
+                            PLA components snapping under load when walking</li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Future
+                            integration with ROS2 for Autonous Navigation and easier integration with other subsystems
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Future
+                            improvements to mechanical design to add additional degree of freedom to the legs </li>
                     </ul>
                     <!-- <div style="margin-top: auto; padding-top: 25px;">
                         <a href="https://github.com/khuzema-h" target="_blank" class="btn">
