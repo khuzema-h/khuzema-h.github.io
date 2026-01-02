@@ -294,6 +294,30 @@
             border-color: rgba(255, 255, 255, 0.2);
         }
 
+        .project-media {
+            width: 100%;
+            height: 180px;
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            background: var(--bg-surface-hover);
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+
+        .project-media img,
+        .project-media video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .glass-card:hover .project-media img,
+        .glass-card:hover .project-media video {
+            transform: scale(1.05);
+        }
+
         .glass-card::before {
             content: '';
             position: absolute;
@@ -716,6 +740,13 @@
             <h2>Featured Projects</h2>
             <div class="card-grid">
                 <div class="glass-card">
+                    <div class="project-media">
+                        <!-- Replace with your video or image path -->
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/manipulator.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <h3 style="color: var(--accent-blue);">Autonomous Mobile Manipulator</h3>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Built and developed a fully autonomous
                         robot capable of computer vision-based object localization and servo-controlled manipulation.
@@ -728,6 +759,12 @@
                     </ul>
                 </div>
                 <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/servoing.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <h3 style="color: var(--accent-blue);">Visual Servoing with MPC</h3>
                     <p style="color: var(--text-secondary); margin-bottom: 20px;">Designed MPC visual servoing
                         controller for Turtlebot3 navigation using RealSense and Aruco markers.</p>
@@ -738,7 +775,227 @@
                             robot steering optimization.</li>
                     </ul>
                 </div>
-            </div>
+
+                <!-- Template for 10 more projects -->
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/img/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                        innovation here.</p>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
+                        </li>
+                    </ul>
+                    <div class="glass-card">
+                        <div class="project-media">
+                            <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                                <source src="assets/img/placeholder.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
+                            innovation here.</p>
+                        <ul>
+                            <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature
+                                1</li>
+                            <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature
+                                2</li>
+                        </ul>
+                    </div>
+                </div>
         </section>
 
         <section id="publications" class="section">
