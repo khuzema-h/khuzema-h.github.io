@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -967,7 +967,7 @@
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
                         </li>
                     </ul>
-                <!-- </div>
+                    <!-- </div>
                     <div class="glass-card">
                         <div class="project-media">
                             <video autoplay loop muted playsinline poster="assets/img/arm.png">
@@ -985,7 +985,7 @@
                         </ul>
                     </div>
                 </div> -->
-                
+
         </section>
 
         <section id="publications" class="section">
@@ -1031,6 +1031,11 @@
     <button class="back-to-top" id="backToTop">↑</button>
 
     <script>
+        // Initialize theme immediately to prevent flickering
+        const root = document.documentElement;
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        root.setAttribute('data-theme', savedTheme);
+
         document.addEventListener('DOMContentLoaded', () => {
             const navbar = document.getElementById('navbar');
             const backToTop = document.getElementById('backToTop');
@@ -1040,10 +1045,11 @@
             // Theme toggle logic
             const themeToggle = document.getElementById('themeToggle');
             const themeIcon = document.getElementById('themeIcon');
-            const root = document.documentElement;
 
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            root.setAttribute('data-theme', savedTheme);
+            function updateThemeIcon(theme) {
+                themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
+            }
+
             updateThemeIcon(savedTheme);
 
             themeToggle.addEventListener('click', () => {
