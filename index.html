@@ -776,10 +776,36 @@
                     <div class="job-card">
                         <div class="job-header">
                             <div>
-                                <div class="job-title-text">Computational Fluid Dynamics Simulation Intern</div>
-                                <div class="company-name">Indian Institute of Technology, Bombay</div>
+                                <div class="job-title-text">Flow Controls Engineering and Project Management Intern
+                                </div>
+                                <div class="company-name">Emerson, Dubai, UAE</div>
                             </div>
-                            <div class="company-name">2022</div>
+                            <div class="company-name">Feb 2023 - Feb 2024</div>
+                        </div>
+
+                        <div class="job-details">
+                            <ul>
+                                <li>Performed 3D Simulations to analyze the efficacy and flow patterns for the various
+                                    desuperheaters in the Fisher Product Catalog.</li>
+                                <li>Assisted the Project Management team at Emerson Dubai for the
+                                    Fisher Control Valves Business Unit which primarily caters to Oil and
+                                    Gas companies in the MENA region.</li>
+                                <li>Assisted with Shop Floor Inspection of valves and components as well as Customer
+                                    Support on Specification sheets, coordinating with various Subject Matter Experts
+                                    (SMEs) to resolve any issues.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title-text">Computational Fluid Dynamics Simulation Intern</div>
+                                <div class="company-name">Indian Institute of Technology, Bombay, India</div>
+                            </div>
+                            <div class="company-name">June 2022</div>
                         </div>
                         <div class="job-details">
                             <ul>
@@ -791,6 +817,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -799,7 +826,6 @@
             <div class="card-grid">
                 <div class="glass-card">
                     <div class="project-media">
-                        <!-- Replace with your video or image path -->
                         <video autoplay loop muted playsinline poster="assets/img/arm.png">
                             <source src="assets/video/701final.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -832,14 +858,9 @@
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Added a custom
                             designed LED ring indicator to the robot for navigation state visualization.</li>
                     </ul>
-                    <!-- <div style="margin-top: auto; padding-top: 25px;">
-                        <a href="https://github.com/khuzema-h" target="_blank" class="btn">
-                            Source Code
-                        </a>
-                    </div> -->
                 </div>
 
-                <!-- Template for 10 more projects -->
+
                 <div class="glass-card">
                     <div class="project-media">
                         <video autoplay loop muted playsinline poster="assets/img/arm.png">
@@ -980,11 +1001,6 @@
                         <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Future
                             improvements to mechanical design to add additional degree of freedom to the legs </li>
                     </ul>
-                    <!-- <div style="margin-top: auto; padding-top: 25px;">
-                        <a href="https://github.com/khuzema-h" target="_blank" class="btn">
-                            Source Code
-                        </a>
-                    </div> -->
                 </div>
 
                 <div class="glass-card">
@@ -1093,73 +1109,111 @@
                     </div>
                 </div>
 
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/video/pursuit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Pursuit RRT* Path Planner for Turtlebot3</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Developed an RRT* path planner for a
+                        Turtlebot3 robot to navigate through a maze-like environment to catch a moving target.</p>
+
+                    <div class="project-tags">
+                        <span class="p-tag">ROS 2</span>
+                        <span class="p-tag">Python</span>
+                        <span class="p-tag">Gazebo</span>
+                        <span class="p-tag">Turtlebot3</span>
+                        <span class="p-tag">RRT*</span>
+                        <span class="p-tag">Pursuit Path Planner</span>
+
+                    </div>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Developed a 2D
+                            RRT* path planner for a maze-like environment to catch a moving target.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> The planner
+                            implements a pursuit strategy to catch a randomly moving target by using RRT* to plan a path
+                            to the target's current position.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Extended this
+                            to a Gazebo simulation with Turtlebot3 robots, where the pursuer robot uses RRT* to plan a
+                            path to catch the target robot.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> The pursuer
+                            robot implements extracts the current pose of the evader robot and plans a path, and is
+                            considered caught when the robot is in view and a certain distance away using a depth
+                            camera.
+                        </li>
+
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">The Evader
+                            robot implements proportional control to follow the waypoints, subscribing to /odom to
+                            extract pose and heading angles from the quaternion, then publishing linear and angular
+                            velocities to /cmd_vel
+
+
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 25px;">
+                        <a href="https://github.com/khuzema-h/pursuit_evasion" target="_blank" class="btn">
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                            <source src="assets/video/rl.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 style="color: var(--accent-blue);">Multi-Agent Reinforcement Learning for Drone Swarm Control
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Custom MAPPO and IPPO Implementation
+                        for Advanced Coordination Tasks in gym-pybullet-drones environment.</p>
+                    <div class="project-tags">
+                        <span class="p-tag">Drones</span>
+                        <span class="p-tag">Multi-Agent</span>
+                        <span class="p-tag">PyTorch</span>
+                        <span class="p-tag">Reinforcement Learning</span>
+                        <span class="p-tag">MAPPO</span>
+                        <span class="p-tag">IPPO</span>
+
+                    </div>
+                    <ul>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;"> Developed
+                            custom Multi-Agent Proximal Policy Optimization (MAPPO) and IPPO algorithms from scratch
+                            using PyTorch for high-efficiency swarm control. </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+                            Extended the gym-pybullet-drones environment to include complex multi-agent scenarios:
+                            hovering, spiral formation, and leader-follower navigation.
+                        </li>
+
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+                            Implemented a centralized critic in MAPPO to resolve global credit assignment, significantly
+                            reducing return variance during training.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+                            Achieved a 3x performance improvement over Stable-Baselines3 (SB3) in coupled tasks,
+                            reducing Spiral RMSE to 0.25m.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+                            Optimized safety metrics, reaching a low collision rate of 2.1% while maintaining maximum
+                            episode stability of 240 steps.
+                        </li>
+                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">
+                            Eliminated the overhead of standard RL libraries (Rllib/MARLlib) by building a streamlined,
+                            flexible training pipeline.
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 25px;">
+                        <a href="https://github.com/khuzema-h/marl-gym-pybullet-drones" target="_blank" class="btn">
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+
                 <!--<div class="glass-card">
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
-                            <source src="assets/img/placeholder.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
-                        innovation here.</p>
-                    <ul>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
-                        </li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
-                        </li>
-                    </ul>
-                    <div style="margin-top: auto; padding-top: 25px;">
-                        <a href="https://github.com/khuzema-h" target="_blank" class="btn">
-                            Source Code
-                        </a>
-                    </div>
-                </div>
-
-                <div class="glass-card">
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
-                            <source src="assets/img/placeholder.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
-                        innovation here.</p>
-                    <ul>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
-                        </li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
-                        </li>
-                    </ul>
-                    <div style="margin-top: auto; padding-top: 25px;">
-                        <a href="https://github.com/khuzema-h" target="_blank" class="btn">
-                            Source Code
-                        </a>
-                    </div>
-                </div>
-
-                <div class="glass-card">
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
-                            <source src="assets/img/placeholder.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <h3 style="color: var(--accent-blue);">Future Project Placeholder</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Describe your upcoming robotics
-                        innovation here.</p>
-                    <ul>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 1
-                        </li>
-                        <li style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 8px;">Key Feature 2
-                        </li>
-                    </ul>
-                    <div style="margin-top: auto; padding-top: 25px;">
-                        <a href="https://github.com/khuzema-h" target="_blank" class="btn">
-                            Source Code
-                        </a>
-                    </div>
-                </div>
-
-                <div class="glass-card">
                     <div class="project-media">
                         <video autoplay loop muted playsinline poster="assets/img/arm.png">
                             <source src="assets/img/placeholder.mp4" type="video/mp4">
