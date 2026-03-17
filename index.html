@@ -8,13 +8,10 @@
     <link rel="icon" type="image/png" href="assets/img/arm.png">
     <meta property="og:title" content="Khuzema Habib - Robotics Engineer" />
     <meta property="og:description" content="Khuzema Habibs' Professional Portfolio" />
-    <meta property="og:image" content="https://thequantscientist.github.io/assets/kyo.png" />
-    <meta property="og:url" content="https://thequantscientist.github.io/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Khuzema Habib - Robotics Engineer" />
     <meta name="twitter:description" content="Khuzema Habibs' Professional Portfolio" />
-    <meta name="twitter:image" content="https://thequantscientist.github.io/assets/kyo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
         rel="stylesheet">
     <style>
@@ -480,6 +477,40 @@
             letter-spacing: 0.05em;
         }
 
+        /* Mini taxonomy blocks (robots/sensors) */
+        .tax-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+
+        .tax-item {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 14px 14px 12px;
+            transition: var(--transition);
+        }
+
+        .tax-item:hover {
+            background: var(--bg-surface-hover);
+            transform: translateY(-2px);
+        }
+
+        .tax-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .tax-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         .publication-tags {
             display: flex;
             flex-wrap: wrap;
@@ -625,6 +656,7 @@
             <li><a href="#biography">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#robots-sensors">Robots & Sensors</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
         </ul>
@@ -673,6 +705,63 @@
                             class="tag">RL</a>
                     </div>
 
+                    <h3
+                        style="font-size: 1rem; margin: 20px 0 10px; color: var(--accent-yellow); letter-spacing: 0.1em; text-transform: uppercase;">
+                        Skills</h3>
+
+                    <h3
+                        style="font-size: 0.85rem; margin: 8px 0 10px; color: var(--text-secondary); letter-spacing: 0.12em; text-transform: uppercase;">
+                        Programming Languages</h3>
+                    <div class="interest-tags" style="margin-bottom: 18px;">
+                        <a href="https://www.python.org/" target="_blank" class="tag">Python</a>
+                        <a href="https://isocpp.org/" target="_blank" class="tag">C++</a>
+                    </div>
+
+                    <h3
+                        style="font-size: 0.85rem; margin: 8px 0 10px; color: var(--text-secondary); letter-spacing: 0.12em; text-transform: uppercase;">
+                        Robotics & AI</h3>
+                    <div class="interest-tags" style="margin-bottom: 18px;">
+                        <a href="https://docs.ros.org/en/rolling/" target="_blank" class="tag">ROS 2</a>
+                        <a href="https://pytorch.org/" target="_blank" class="tag">PyTorch</a>
+                        <a href="https://opencv.org/" target="_blank" class="tag">OpenCV</a>
+                        <a href="https://gazebosim.org/" target="_blank" class="tag">Gazebo</a>
+                        <a href="https://developer.nvidia.com/isaac/sim" target="_blank" class="tag">Isaac Sim</a>
+                        <a href="https://carla.org/" target="_blank" class="tag">CARLA</a>
+                        <a href="https://www.gymlibrary.dev/" target="_blank" class="tag">Gym</a>
+                        <a href="https://github.com/huggingface/lerobot" target="_blank" class="tag">LeRobot</a>
+                    </div>
+
+                    <!-- <h3
+                        style="font-size: 0.85rem; margin: 8px 0 10px; color: var(--text-secondary); letter-spacing: 0.12em; text-transform: uppercase;">
+                        Hardware</h3>
+                    <div class="interest-tags" style="margin-bottom: 18px;">
+                        <span class="tag">UR3e</span>
+                        <span class="tag">UR5e</span>
+                        <span class="tag">Turtlebot</span>
+                        <span class="tag">Quadruped</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">Jetson Nano</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Crazyflie</span>
+                        <span class="tag">PixHawk</span>
+                        <span class="tag">GelSight</span>
+                    </div> -->
+
+                    <h3
+                        style="font-size: 0.85rem; margin: 8px 0 10px; color: var(--text-secondary); letter-spacing: 0.12em; text-transform: uppercase;">
+                        Mechanical & CFD</h3>
+                    <div class="interest-tags" style="margin-bottom: 30px;">
+                        <a href="https://www.solidworks.com/" target="_blank" class="tag">SolidWorks</a>
+                        <a href="https://www.ptc.com/en/products/creo" target="_blank" class="tag">Creo</a>
+                        <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank"
+                            class="tag">Fusion 360</a>
+                        <span class="tag">3D Printing</span>
+                        <a href="https://www.ansys.com/products/fluids" target="_blank" class="tag">ANSYS (Fluent, CFX)</a>
+                        <a href="https://www.comsol.com/" target="_blank" class="tag">COMSOL</a>
+                        <a href="https://github.com/ProjectPhysX/FluidX3D" target="_blank" class="tag">FluidX3D</a>
+                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="tag">MATLAB</a>
+                    </div>
+
                     <div class="social-icons">
                         <a href="mailto:habib.khuzema@gmail.com" class="icon-link" title="Email">
                             <img src="assets/img/email-icon.png" alt="Email">
@@ -684,7 +773,7 @@
                         <a href="assets/img/Khuzema_Habib_CV.pdf" target="_blank" class="icon-link" title="Download CV">
                             <img src="assets/img/cvv.png" alt="CV">
                         </a>
-                        <a href="https://www.linkedin.com/in/khuzema-h/" target="_blank" class="icon-link"
+                        <a href="https://www.linkedin.com/in/khuzema-habib/" target="_blank" class="icon-link"
                             title="LinkedIn">
                             <img src="assets/img/linkedin-icon.png" alt="LinkedIn">
                         </a>
@@ -737,6 +826,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="timeline-item">
+                    <div class="job-card">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title-text">Teaching Assistant - Robotics Perception and Planning</div>
+                                <div class="company-name">Department of Computer Science - CMSC 477</div>
+                            </div>
+                            <div class="company-name">Jan 2026 - Present</div>
+                        </div>
+                        <div class="job-details">
+                            <ul>
+                                <li>Guided students in implementing perception and planning pipelines on the DJI Mobile
+                                    Manipulator platform.</li>
+                                <li>Mentored 40+ students on robot control fundamentals, including kinematics, dynamics,
+                                    and trajectory generation.</li>
+                                <li>Conducted weekly office hours and lab sessions, providing technical support and
+                                    clarifying complex concepts in robot control.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="timeline-item">
                     <div class="job-card">
@@ -745,7 +855,7 @@
                                 <div class="job-title-text">Grading Assistant - Control of Robotic Systems</div>
                                 <div class="company-name">Maryland Applied Graduate Engineering - ENPM 667</div>
                             </div>
-                            <div class="company-name">Sept 2025 - Present</div>
+                            <div class="company-name">Sept 2025 - Dec 2025</div>
                         </div>
                         <div class="job-details">
                             <ul>
@@ -823,6 +933,113 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section id="robots-sensors" class="section">
+            <h2>Robots & Sensors</h2>
+            <h3
+                style="margin: 10px 0 14px; color: var(--accent-yellow); letter-spacing: 0.06em; text-transform: uppercase;">
+                Robots</h3>
+            <div class="tax-grid">
+                <div class="tax-item">
+                    <div class="tax-title">UR3e</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">UR5e</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Crazyflie 2.1</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Turtlebot 2/3</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Quadruped</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">DJI Robomaster</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Lerobot Koch Arm</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Franka Research 3</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Franka Emika Panda</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+            </div>
+            <h3
+                style="margin: 26px 0 14px; color: var(--accent-yellow); letter-spacing: 0.06em; text-transform: uppercase;">
+                Sensors</h3>
+            <div class="tax-grid">
+                <div class="tax-item">
+                    <div class="tax-title">ZED Stereo 2i</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Intel RealSense D435i</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Hokuyo UST-10LX 2D LiDAR</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">Velodyne Puck VLP-16 3D LiDAR</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="tax-item">
+                    <div class="tax-title">GelSight Mini</div>
+                    <div class="tax-tags">
+                        <span class="p-tag">Hardware</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1358,71 +1575,107 @@
 
         <section id="publications" class="section">
             <h2>Publications</h2>
-            <div class="card-grid">
-                <div class="pub-card">
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
-                            <source src="assets/video/mhe.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="pub-venue">In Review ICRA 2026</div>
-                    <div class="pub-title">Contextual Neural Moving Horizon Estimation for Robust Quadrotor Control in
-                        Varying Conditions</div>
-                    <h5> <i>Kasra Torshizi, Chak Lam Shek, <span class="author-highlight">Khuzema Habib</span>, Guangyao
-                            Shi, Pratap Tokekar, Troi
-                            Williams</i></h5>
 
 
-
-                    <div class="publication-tags">
-                        <span class="pub-tag">NeuroMHE</span>
-                        <span class="pub-tag">Lee Controller</span>
-                        <span class="pub-tag">Gaussian Process</span>
-                        <span class="pub-tag">Crazyflie</span>
-                        <span class="pub-tag">Robust Control</span>
-
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-                        Developed a reinforcement learning-based adaptive controller enabling robust quadrotor
-                        trajectory
-                        tracking across diverse environments with 20.3% trajectory error reduction on Crazyflie Drones
-                    </p>
-                    <a href="https://arxiv.org/abs/2509.24281" target="_blank" class="btn">View Paper</a>
+            <div class="pub-card">
+                <div class="project-media">
+                    <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                        <source src="assets/video/WESPR_VID_COMPR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="pub-card">
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline poster="assets/img/arm.png">
-                            <source src="assets/video/a2a.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="pub-venue">In Review ICRA 2026</div>
-                    <div class="pub-title">AFFORD2ACT: Affordance-Guided Automatic Keypoint Selection for Generalizable
-                        and Lightweight Robotic Manipulation</div>
-                    <h5> <i>Anukriti Singh, Kasra Torshizi, <span class="author-highlight">Khuzema Habib</span>, Kelin
-                            Yu, Ruohan Gao, Pratap
-                            Tokekar</i></h5>
+                <div class="pub-venue">In Review IROS 2026</div>
+                <div class="pub-title">WESPR: Wind-adaptive Energy-Efficient Safe Perception & Planning for Robust
+                    Flight with Quadrotors</div>
+                <h5> <i><span class="author-highlight">Khuzema Habib</span>, Pranav Deshakulkarni Manjunath, Kasra
+                        Torshizi, Pratap
+                        Tokekar, Troi Williams</i></h5>
 
 
 
-                    <div class="publication-tags">
-                        <span class="pub-tag">UR3e</span>
-                        <span class="pub-tag">Manipulation</span>
-                        <span class="pub-tag">Affordance</span>
-                        <span class="pub-tag">Lightweight</span>
-                        <span class="pub-tag">Semantic Policy</span>
-                        <span class="pub-tag">AI/ML</span>
+                <div class="publication-tags">
+                    <span class="pub-tag">CFD</span>
+                    <span class="pub-tag">Trajectory Optimization</span>
+                    <span class="pub-tag">FluidX3D</span>
+                    <span class="pub-tag">Crazyflie</span>
+                    <span class="pub-tag">Robust Control</span>
 
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-                        Developed an affordance-guided keypoint selection framework enabling lightweight, real-time
-                        robotic manipulation with 82% success on unseen objects
-                    </p>
-                    <a href="https://arxiv.org/abs/2510.01433" target="_blank" class="btn">View Paper</a>
                 </div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    <li>Created a lightweight CFD-informed trajectory planner generating wind-optimized paths in <10s
+                            using FluidX3D.</li>
+                    <li>Validated system on Crazyflie 2.1 hardware, achieving a 12.5–58.7% reduction in path divergence
+                        and 24.6% better
+                        stability (mean jerk) by proactively anticipating aerodynamic disturbances.</li>
+                </p>
+                <a href="https://arxiv.org/abs/2603.09194" target="_blank" class="btn">View Paper</a>
             </div>
-        </section>
+    </div>
+    <div class="card-grid">
+        <div class="pub-card">
+            <div class="project-media">
+                <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                    <source src="assets/video/mhe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- <div class="pub-venue">In Review ICRA 2026</div> -->
+            <div class="pub-title">Contextual Neural Moving Horizon Estimation for Robust Quadrotor Control in
+                Varying Conditions</div>
+            <h5> <i>Kasra Torshizi, Chak Lam Shek, <span class="author-highlight">Khuzema Habib</span>, Guangyao
+                    Shi, Pratap Tokekar, Troi
+                    Williams</i></h5>
+
+
+
+            <div class="publication-tags">
+                <span class="pub-tag">NeuroMHE</span>
+                <span class="pub-tag">Lee Controller</span>
+                <span class="pub-tag">Gaussian Process</span>
+                <span class="pub-tag">Crazyflie</span>
+                <span class="pub-tag">Robust Control</span>
+
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                Developed a reinforcement learning-based adaptive controller enabling robust quadrotor
+                trajectory
+                tracking across diverse environments with 20.3% trajectory error reduction on Crazyflie Drones
+            </p>
+            <a href="https://arxiv.org/abs/2509.24281" target="_blank" class="btn">View Paper</a>
+        </div>
+        <div class="pub-card">
+            <div class="project-media">
+                <video autoplay loop muted playsinline poster="assets/img/arm.png">
+                    <source src="assets/video/a2a.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="pub-venue">In Review IROS 2026</div>
+            <div class="pub-title">AFFORD2ACT: Affordance-Guided Automatic Keypoint Selection for Generalizable
+                and Lightweight Robotic Manipulation</div>
+            <h5> <i>Anukriti Singh, Kasra Torshizi, <span class="author-highlight">Khuzema Habib</span>, Kelin
+                    Yu, Ruohan Gao, Pratap
+                    Tokekar</i></h5>
+
+
+
+            <div class="publication-tags">
+                <span class="pub-tag">UR3e</span>
+                <span class="pub-tag">Manipulation</span>
+                <span class="pub-tag">Affordance</span>
+                <span class="pub-tag">Lightweight</span>
+                <span class="pub-tag">Semantic Policy</span>
+                <span class="pub-tag">AI/ML</span>
+
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                Developed an affordance-guided keypoint selection framework enabling lightweight, real-time
+                robotic manipulation with 82% success on unseen objects
+            </p>
+            <a href="https://arxiv.org/abs/2510.01433" target="_blank" class="btn">View Paper</a>
+        </div>
+    </div>
+    </section>
 
 
     </div> <!-- Close content-wrapper -->
